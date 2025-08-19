@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Estado: Desconectado"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="#EEEEEE"
+        android:padding="8dp"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:id="@+id/messagesText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mensajes:"
+            android:textSize="16sp" />
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/inputMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Escribe un mensaje"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/sendButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/connectBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="conectar"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/disconnectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="desconectar"
+        android:layout_marginTop="8dp" />
+    <Button
+        android:id="@+id/setUrlButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Configurar URL"
+        android:layout_marginTop="8dp" />
+</LinearLayout>
